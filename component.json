@@ -24,30 +24,6 @@
         "in": {},
         "out": "./lib/schemas/schemaHardcoded.out.json"
       }
-    },
-    "webhookdemo2": {
-      "main": "./lib/triggers/triggerHardcoded.js",
-      "title": "Webhook OutMetadataView fields",
-      "fields": {
-        "outputSample": {
-          "viewClass": "OutMetadataView",
-          "label": "Output JSON Sample",
-          "required": true,
-          "default": "{\"email\": \"myemail@mail.ru\" , \"response\": \"ok\"}"
-        }
-      }
-    },
-    "webhookdemo3": {
-      "main": "./lib/triggers/triggerHardcoded.js",
-      "title": "Webhook OutMetadataView fields",
-      "fields": {
-        "outputSample": {
-          "viewClass": "WebHookPayloadView",
-          "label": "Sample data",
-          "required": true,
-          "default": "{\"email\": \"myemail@mail.ru\" , \"response\": \"ok\"}"
-        }
-      }
     }
   }
 }
