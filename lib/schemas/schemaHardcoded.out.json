@@ -1,0 +1,8 @@
+{
+    "type": "object",
+    "properties": {
+        "email": "demo@email.com",
+        "event": "elastic event",
+        "list_id": "555888"
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "SendInBlue",
+  "description": "Elastic.IO component SendInBlue",
+  "docsUrl": "https://h3yraq@bitbucket.org/elasticio1/autopilot.git",
+  "credentials": {
+    "fields": {
+      "apiKey": {
+        "label": "Your SendInBlue V3 API Key",
+        "required": true,
+        "viewClass": "TextFieldView"
+      }
+    }
+  },
+  "triggers": {
+    "webhookdemo": {
+      "main": "./lib/triggers/triggerDymanic.js",
+      "title": "Webhook dynamic metadata",
+      "dynamicMetadata": true
+    },
+    "webhookdemo1": {
+      "main": "./lib/triggers/triggerHardcoded.js",
+      "title": "Webhook hardcoded metadata",
+      "metadata": {
+        "in": {},
+        "out": "./lib/schemas/schemaHardcoded.out.json"
+      }
+    },
+    "webhookdemo2": {
+      "main": "./lib/triggers/triggerHardcoded.js",
+      "title": "Webhook OutMetadataView fields",
+      "fields": {
+        "outputSample": {
+          "viewClass": "OutMetadataView",
+          "label": "Output JSON Sample",
+          "required": true,
+          "default": "{\"email\": \"myemail@mail.ru\" , \"response\": \"ok\"}"
+        }
+      }
+    },
+    "webhookdemo3": {
+      "main": "./lib/triggers/triggerHardcoded.js",
+      "title": "Webhook OutMetadataView fields",
+      "fields": {
+        "outputSample": {
+          "viewClass": "WebHookPayloadView",
+          "label": "Sample data",
+          "required": true,
+          "default": "{\"email\": \"myemail@mail.ru\" , \"response\": \"ok\"}"
+        }
+      }
+    }
+  }
+}
