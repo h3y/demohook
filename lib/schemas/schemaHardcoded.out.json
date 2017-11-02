@@ -3,6 +3,12 @@
     "properties": {
         "email": "demo@email.com",
         "event": "elastic event",
-        "list_id": "555888"
+        "list_id": "555888",
+        "emails": [
+            {
+                "email": "star2star1@gmail.com",
+                "category": "work"
+            }
+        ]
     }
 }
